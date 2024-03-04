@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Amboni's Library</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="title-container">
+                <h1 class="title">Amboni's Library</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search" placeholder="Search item">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <button title="Add item" class="button" id="add-button">
+                            <i class="fa fa-plus-square"></i>
+                            <span>Add item</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button title="Import file" class="button">
+                            <i class="fa fa-file-excel"></i>
+                            <span>Import file</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section">
+            <div class="list-container" id="list-container">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-section">
+            <nav>
+                <span class="made-by">Made by André Amboni - 2023</span>
+            </nav>
+        </section>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

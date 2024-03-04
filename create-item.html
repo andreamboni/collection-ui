@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Book Info</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="title-container">
+                <h1 class="title">Amboni's Library</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search" placeholder="Search item">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <button title="Add item" class="button">
+                            <i class="fa fa-plus-square"></i>
+                            <span>Add item</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button title="Import file" class="button">
+                            <i class="fa fa-file-excel"></i>
+                            <span>Import file</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section">
+            <form id="form" class="grid-container">
+                <div class="grid-item">
+                    <div class="section-title">Informações do título</div>
+                    <div class="form-row">
+                        <label for="titulo">Título</label>
+                        <input type="text" id="title" placeholder="Título">
+                    </div>
+                    <div class="form-row">
+                        <label for="autor">Autor</label>
+                        <input type="text" id="author" placeholder="Autor">
+                    </div>
+                    <div class="form-row">
+                        <label for="editora">Editora</label>
+                        <input type="text" id="publisher" placeholder="Editora">
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="section-title">Informações da edição</div>
+                    <div class="form-row">
+                        <label for="choose">Tipo</label>
+                        <select id="itemType">
+                            <option disabled selected>Please select</option>
+                            <option value="LIVRO">Livro</option>
+                            <option value="GIBI">Gibi</option>
+                            <option value="MANGA">Manga</option>
+                        </select>
+                    </div>
+                    <fieldset id="itemFormat" class="legacy-form-row">
+                        <legend>Formato</legend>
+                        <input id="formato-1" name="itemFormat" type="radio" value="FISICO" checked />
+                        <label for="formato-1" class="radio-label">Físico</label>
+                        <input id="formato-2" name="itemFormat" type="radio" value="DIGITAL" />
+                        <label for="formato-2" class="radio-label">Digital</label>
+                    </fieldset>
+                    <div class="form-row">
+                        <label for="quantidadePaginas">Quantidade de páginas</label>
+                        <input type="number" id="pagesNumber" placeholder="Quantidade de páginas">
+                    </div>
+                    <div class="form-row">
+                        <label for="edicao">Edição</label>
+                        <input type="number" id="edition" placeholder="Edição">
+                    </div>
+                    <div class="form-row">
+                        <label for="ano-edicao">Ano edição</label>
+                        <input type="number" id="editionYear" placeholder="Ano edição">
+                    </div>
+                    <div class="form-row">
+                        <label for="choose">Acabamento</label>
+                        <select id="binding">
+                            <option disabled selected>Please select</option>
+                            <option value="BROCHURA">Brochura</option>
+                            <option value="CAPA_DURA">Capa Dura</option>
+                            <option value="BOX_BROCHURA">Box Brochura</option>
+                            <option value="BOX_CAPA_DURA">Box Capa Dura</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="search">Idioma</label>
+                        <input type="text" id="language" placeholder="Idioma" autocomplete="off">
+                        <div class="language-result"></div>
+                    </div>
+                    <div class="form-row">
+                        <label for="pais">País</label>
+                        <input type="text" id="country" placeholder="País">
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="section-title">Informações da coleção</div>
+                    <div class="form-row">
+                        <label for="quantidadeLivros">Quantidade de livros</label>
+                        <input type="number" id="copies" placeholder="Quantidade de livros">
+                    </div>
+                    <div class="form-row">
+                        <label for="choose">Coleção</label>
+                        <select id="collection">
+                            <option disabled selected>Please select</option>
+                            <option value="ASOIAF">ASOIAF</option>
+                        </select>
+                    </div>
+                    <button class="form-button button" id="add-item">Adicionar item</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-section">
+            <nav>
+                <span class="made-by">Made by André Amboni - 2023</span>
+            </nav>
+        </section>
+    </footer>
+    <script src="./js/add-item.js"></script>
+</body>
+
+</html>
