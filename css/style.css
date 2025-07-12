@@ -20,8 +20,8 @@ body {
 
     display: flex;
     flex-direction: column;
-    max-width: 1950px;
-    min-height: 100vh;
+    /* max-width: 1950px; */
+    /* min-height: 200px; */
     margin: 0;
 }
 
@@ -136,7 +136,7 @@ footer {
 .section {
     display: flex;
     /* justify-content: center; */
-    min-height: 90vh;
+    /* min-height: 90vh; */
 }
 
 .list-container {
@@ -270,11 +270,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
     padding: 10px;
     margin: 10px;
-
     
     border: 1px solid red;
 }
